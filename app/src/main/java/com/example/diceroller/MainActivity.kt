@@ -19,11 +19,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         val mainActivityView: LinearLayout = binding.root
-        val dice: Button = binding.rollButton
+        val diceButton: Button = binding.rollButton
         val diceImageView: ImageView = binding.actionImageVector
 
-        dice.setText(R.string.letsRoll)
-        dice.setOnClickListener {
+        diceButton.setText(R.string.letsRoll)
+        diceButton.setOnClickListener {
             rollDice(diceImageView)
         }
 
